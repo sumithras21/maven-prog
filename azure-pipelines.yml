@@ -1,0 +1,11 @@
+trigger:
+- main
+
+pool:
+  name: Default   # Uses your self-hosted agent
+
+steps:
+- script: |
+    echo Hello from self-hosted agent!
+    java -version
+  displayName: 'Test Java Version and Agent'
